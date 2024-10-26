@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <style>
-      /* Темная тема */
       body {
         background-color: #121212;
         color: #e0e0e0;
@@ -28,7 +27,6 @@
         color: #ffffff;
       }
 
-      /* Настройка размеров карточек и изображений */
       .large-card {
         max-width: 100%;
       }
@@ -37,7 +35,6 @@
         object-fit: cover;
       }
 
-      /* Фиолетовый градиент для кнопок */
       .btn-gradient {
         background: linear-gradient(45deg, #8e2de2, #4a00e0);
         color: #ffffff;
@@ -47,7 +44,6 @@
         background: linear-gradient(45deg, #4a00e0, #8e2de2);
       }
 
-      /* Статус подходит в виде галочки */
       .status-check {
         position: absolute;
         top: 230px;
@@ -65,12 +61,10 @@
         font-size: 1.2rem;
       }
 
-      /* Отступ между кнопками */
       .btn-spacing {
         margin-right: 8px;
       }
 
-      /* Настройка строки поиска */
       .search-container {
         width: 100%;
         max-width: 350px;
@@ -114,7 +108,6 @@
         background: #4a00e0;
       }
 
-      /* Адаптивность */
       @media (max-width: 768px) {
         .search-container {
           max-width: 100%;
@@ -131,7 +124,6 @@
     />
   </head>
   <body>
-    <!-- Навигационный хедер -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -179,10 +171,8 @@
       </div>
     </nav>
 
-    <!-- Главная часть страницы с фильтрами и карточками -->
     <div class="container my-5">
       <div class="row">
-        <!-- Боковая панель фильтров -->
         <aside class="col-md-3 mb-4">
           <div class="card card-body bg-dark text-light">
             <h5 class="card-title">Фильтры</h5>
@@ -230,10 +220,8 @@
           </div>
         </aside>
 
-        <!-- Основная часть с карточками -->
         <div class="col-md-9">
           <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Пример одной карточки -->
             <div class="col d-flex justify-content-center">
               <div class="card large-card position-relative">
                 <div class="status-check">
@@ -384,7 +372,6 @@
                 </div>
               </div>
             </div>
-            <!-- Повторяющиеся карточки с вакансиями -->
           </div>
         </div>
       </div>
