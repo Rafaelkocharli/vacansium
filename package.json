@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "fix": "eslint ./src --fix && prettier --write ./ "
   },
   "eslintConfig": {
     "extends": [
@@ -59,10 +59,12 @@
     "globals": "^15.11.0",
     "husky": "^9.1.6",
     "jest": "^27.5.1",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.11.0"
   },
   "lint-staged": {
+    "*.ts": "npx tsc --noEmit",
     "*.{js,jsx,ts,tsx}": "npx eslint",
     "*.{js,jsx,ts,tsx,html,css}": "npx prettier --check"
   }
